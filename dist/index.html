@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Generator With JAVASCript</title>
+    <link rel="stylesheet" href="output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/input.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="base font-poppins flex justify-center items-center bg-gray-700 min-h-screen w-full">
+        <div class="card bg-white  w-[30rem] p-10 rounded-[1.5rem]">
+            <h2 class="text-[1.3rem] font-medium">Enter your text or URL</h2>
+            <div class="form mt-5">
+                <form action="#">
+                    <input type="text" class="border border-gray-600 w-full py-3 rounded-lg pl-2 " placeholder="" id="qr-text">
+                </form>
+                <div class="img  flex justify-center items-center mt-5" id="image-box">
+                    <img src="" class="" id="qr-image">
+                </div>
+                <div class="btn mt-2">
+                    <button class="bg-[#4C59F6] text-white p-5 w-full text-center rounded-lg" onclick="generateqr()">Generator QR code</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
